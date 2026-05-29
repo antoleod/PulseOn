@@ -1,9 +1,10 @@
+self.__PULSEONE_BASE = '/PulseOn';
 const CACHE_NAME = 'pulseone-v1';
 const STATIC_ASSETS = [
-  '/',
-  '/manifest.json',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
+  '/PulseOn/',
+  '/PulseOn/manifest.json',
+  '/PulseOn/icons/icon-192.png',
+  '/PulseOn/icons/icon-512.png',
 ];
 
 self.addEventListener('install', (event) => {
@@ -28,7 +29,7 @@ self.addEventListener('fetch', (event) => {
   // Network-first for navigation requests
   if (request.mode === 'navigate') {
     event.respondWith(
-      fetch(request).catch(() => caches.match('/'))
+      fetch(request).catch(() => caches.match('/PulseOn/'))
     );
     return;
   }
