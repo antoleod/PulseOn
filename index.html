@@ -25,15 +25,15 @@
     </style>
   <meta name="theme-color" content="#070713">
 <meta name="description" content="Your intelligent music companion">
-<link rel="icon" href="/PulseOn/favicon.ico" />
+<link rel="icon" href="/favicon.ico" />
     <!-- PWA / iOS home screen -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="PulseOne" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <link rel="apple-touch-icon" href="/PulseOn/icons/icon-192.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/PulseOn/icons/icon-192.png" />
-    <link rel="manifest" href="/PulseOn/manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
   </head>
 
   <body>
@@ -43,11 +43,11 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/PulseOn/_expo/static/js/web/index-b8687519af078421965a55ebf0232ad8.js" defer></script>
+  <script src="/_expo/static/js/web/index-b8687519af078421965a55ebf0232ad8.js" defer></script>
 
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/PulseOn/sw.js', { scope: '/PulseOn/' }).catch(() => {});
+      navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {});
     }
   </script>
 </body>
