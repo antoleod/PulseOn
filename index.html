@@ -43,6 +43,12 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/PulseOn/_expo/static/js/web/index-d8470e23ae7c25981778865b22000ad6.js" defer></script>
+  <script src="/PulseOn/_expo/static/js/web/index-b8687519af078421965a55ebf0232ad8.js" defer></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/PulseOn/sw.js', { scope: '/PulseOn/' }).catch(() => {});
+    }
+  </script>
 </body>
 </html>
